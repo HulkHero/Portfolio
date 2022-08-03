@@ -50,7 +50,7 @@ export default function About() {
           <Typography variant="h3" color="#fff" component="h4" sx={{fontSize:{xs:"1rem",sm:"1.3rem"},lineHeight:"40px",position:"absolute",left:"20px"}}>About us</Typography>
      </Decorator>
         <Typography variant="h3" component="h4">
-            Hello, I'm Hulk
+            Hello, I'm Hammad
         </Typography>
         <div data-aos="fade-up" style={{width:"80px",height:"6px",backgroundColor:`${theme.colors.primary}` ,zIndex:"1000",borderRadius:"20px" }}></div>
         <Typography variant="h5" component="h6">

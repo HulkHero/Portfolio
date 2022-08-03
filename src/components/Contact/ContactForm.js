@@ -31,11 +31,11 @@ const ContactForm = () => {
   return (
    
      <form ref={form} onSubmit={sendEmail}>
-      <Grid container justifyContent="center" flexDirection={"column"} >
-    <TextField type="name" value={user.name} name="name" id="outlined-basic" onChange={handleChange} sx={{maxWidth:"400px",mb:'10px',input :{color:`${theme.colors.base2}`,borderColor:`${theme.colors.base2}`},bgcolor:`${theme.colors.primary1}`}} label="Name" variant="outlined" />     
-    <TextField type="email" value={user.email} name="email" id="outlined-basic" onChange={handleChange} sx={{maxWidth:"400px",mb:'10px',input :{color:`${theme.colors.base2}`,borderColor:`${theme.colors.base2}`}}}  label="Email" variant="outlined" />
-    <TextField type="messege" value={user.messege} name="messege" id="outlined-basic" onChange={handleChange} multiline={true} sx={{maxWidth:"400px",mb:'10px',minHeight:"200px",input :{color:`${theme.colors.base2}`,borderColor:`${theme.colors.base2}`}}} label="Message" variant="outlined" />
-    <Button type="submit"  value="Send" sx={{width:"50px"}}>Submit</Button>
+      <Grid container justifyContent="center"  sx={{width:"90%"}} flexDirection={"column"} >
+    <TextField type="name" value={user.name} name="name" id="outlined-basic" onChange={handleChange} sx={{alignSelf:"center",maxWidth:"400px",mb:'10px',input :{color:`${theme.colors.base2}`,borderColor:`${theme.colors.base2}`},bgcolor:`${theme.colors.base1}`}} label="Name" variant="outlined" />     
+    <TextField type="email" value={user.email} name="email" id="outlined-basic" onChange={handleChange} sx={{alignSelf:"center",maxWidth:"400px",mb:'10px',input :{color:`${theme.colors.base2}`,borderColor:`${theme.colors.base2}`}}}  label="Email" variant="outlined" />
+    <TextField type="messege" value={user.messege} name="messege" id="outlined-basic" onChange={handleChange} multiline={true} sx={{alignSelf:"center",maxWidth:"400px",mb:'10px',minHeight:"200px",input :{color:`${theme.colors.base2}`,borderColor:`${theme.colors.base2}`}}} label="Message" variant="outlined" />
+    <Button type="submit"  value="Send" sx={{alignSelf:"center",width:"50px"}}>Submit</Button>
     </Grid>
     </form>
     

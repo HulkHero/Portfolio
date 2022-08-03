@@ -63,8 +63,8 @@ export const Portfolio = () => {
            </Grid>
             <Grid container sx={{marginTop:"25px"}} >
             <Grid item xs ={12} sm={7} md={8} sx={{width:"50%"}} data-aos="fade-right">  <Icons></Icons></Grid>
-            <Grid item xs={0} sx={{display:{xs:"none",sm:"block"}}} sm={5} md={4} >
-            <Box data-aos="fade-left"><img src={Image} style={{height:"500px"}}></img></Box>
+            <Grid item xs={0} sx={{width:"50%",display:{xs:"none",sm:"block"}}} sm={5} md={4} >
+            <Box data-aos="fade-right" sx={{width:"50%"}}><img src={Image} style={{height:"500px"}}></img></Box>
             </Grid>
            </Grid>
         </Box>

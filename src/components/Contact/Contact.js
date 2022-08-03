@@ -21,8 +21,8 @@ const Decorator=styled(Box)(({ theme })=>({
   ))
 const Contact = () => {
   return (
-    <div id="contact" style={{ width:"100%",bgcolor:`${theme.colors.primary1}`,marginTop:"0"}}>
-    <Box sx={{ width:"100%",bgcolor:`${theme.colors.primary1}`,paddingTop:"60px"}}>
+    <div id="contact" style={{ width:"100%",bgcolor:`${theme.colors.base1}`,marginTop:"0"}}>
+    <Box sx={{ width:"100%",bgcolor:`${theme.colors.base1}`,paddingTop:"60px"}}>
       
    <Grid
        container
@@ -48,7 +48,7 @@ const Contact = () => {
         </Grid>
         </Grid>
         <Grid container justifyContent="center"  sx={{marginTop:"25px"}} >
-        <Grid item justifyContent="center" xs={0} sx={{display:{xs:"none",sm:"block"}}} sm={5} md={4} >
+        <Grid item justifyContent="center" xs={0}  sx={{width:"50%", display:{xs:"none",sm:"block"}}} sm={5} md={4} >
             <Box  sx={{marginLeft:"40px"}}  ><img src={Image} style={{height:"500px"}}></img></Box>
             </Grid>
             <Grid item xs ={12} sm={7} md={8} sx={{width:"50%"}} ><ContactForm></ContactForm></Grid>

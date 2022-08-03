@@ -8,6 +8,7 @@ import {styled} from '@mui/material'
 import Hiddens from '@mui/material';
 import theme from './theme';
 import { HashLink } from 'react-router-hash-link';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const FAppBar= styled(AppBar)(({theme})=>({
    backgroundColor:theme.colors.base1,
@@ -39,7 +40,7 @@ export default function NavAppBar() {
           </Typography>
           <Box>
             <Box sx={{display:{ sm:"block",xs:"none"}}}>
-            
+            <Button sx={{ color:"#fff",width:"50px" }} ><a target="_blank" sx={{color:"#fff",textDecoration:"none"}} href="https://github.com/HulkHero"><GitHubIcon sx={{color:"#fff",mt:"5px"}}/></a></Button>
                <HashLink style={{textDecoration:'none'}} smooth to="#about"> <Button sx={{ color:"#fff" }}>About</Button></HashLink>
                <HashLink style={{textDecoration:'none'}} smooth to="#portfolio"> <Button sx={{ color:"#fff" }}>Portfolio</Button></HashLink>
                <HashLink style={{textDecoration:'none'}} smooth to="#contact"> <Button sx={{ color:"#fff" }}>Contact</Button></HashLink>

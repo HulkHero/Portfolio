@@ -1,11 +1,13 @@
-import { AppBar, Box, Typography } from "@mui/material"
+import { AppBar, Box, Typography ,Button} from "@mui/material"
 import { useTheme } from '@mui/material';
 import { styled } from "@mui/material/styles";
 import Image from "../images/brandBanner.jpg"
 import NavAppBar from "./AppBar";
 import ArrowDownwardRoundedIcon from '@mui/icons-material/ArrowDownwardRounded';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 import Typed from "react-typed"
+import GitHub from "@mui/icons-material/GitHub";
 const HeaderWrapper = styled(Box)(({ theme }) => ({
   width: '100%',
   minHeight: '90vh',
@@ -91,7 +93,8 @@ const Header=()=>{
             <ArrowDownwardRoundedIcon></ArrowDownwardRoundedIcon>
           </Arrow>
           </Decorator>
-          
+
+        
         </HeaderContainer>
         </HeaderWrapper>
         
