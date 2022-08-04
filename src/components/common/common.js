@@ -1,4 +1,3 @@
-import { Divider, Typography } from "@mui/material";
 import theme from "../theme"
 
 

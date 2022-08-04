@@ -4,7 +4,6 @@ import { Box, Typography,Grid,styled} from '@mui/material'
 import theme from '../theme'
 import Image from '../../images/contactus.jpg'
 import ContactForm from './ContactForm'
-import { ContactUs } from './contact2'
 const Decorator=styled(Box)(({ theme })=>({
     display: "flex",
     fontWeight: "bolder",
@@ -38,13 +37,13 @@ const Contact = () => {
          </Decorator>
        </Grid>
         <Grid container item xs={12} justifyContent="center">
-       <Typography variant="h3" component="h4" sx={{color:`${theme.colors.base2}`,marginTop:"20"}}>
+       <Typography variant="h3" component="h4" sx={{fontSize:{xs:"2rem",sm:"3rem"},color:`${theme.colors.base2}`,paddingTop:"20px"}}>
          Contact 
         </Typography>
         
         </Grid>
         <Grid container xs={12} item justifyContent="center">
-        <div data-aos="fade-up" style={{width:"100px",height:"6px",backgroundColor:`${theme.colors.primary}` ,zIndex:"1000",borderRadius:"20px" }}></div>
+        <div data-aos="fade-up" style={{width:"100px",height:"4px",backgroundColor:`${theme.colors.primary}` ,zIndex:"1000",borderRadius:"20px" }}></div>
         </Grid>
         </Grid>
         <Grid container justifyContent="center"  sx={{marginTop:"25px"}} >

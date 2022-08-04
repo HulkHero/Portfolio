@@ -35,8 +35,8 @@ export const Portfolio = () => {
     
   }, [])
   return (
-    <div id="portfolio"  style={{ width:"100%" , backgroundColor:`${theme.colors.primary1}`,marginTop:"0"}}>
-       <Box sx={{width:"90%", bgcolor:`${theme.colors.primary1}`,paddingTop:"60px"}}>
+    <div id="portfolio"  style={{ width:"100%" , backgroundColor:`${theme.colors.primary1}`,marginTop:"0px",pt:"20px",pb:"20px"}}>
+       <Box sx={{width:{xs:"100%",sm:"90%"}, bgcolor:`${theme.colors.primary1}`,paddingTop:"60px"}}>
          
       <Grid
           container
@@ -52,13 +52,13 @@ export const Portfolio = () => {
             </Decorator>
           </Grid>
            <Grid container item xs={12} justifyContent="center">
-          <Typography variant="h3" component="h4" sx={{color:`${theme.colors.base2}`,marginTop:"20"}}>
+          <Typography variant="h3" component="h4" sx={{color:`${theme.colors.base2}`,marginTop:"20px",fontSize:{xs:"2rem",sm:"3rem"}}}>
             Knowledge Set
            </Typography>
            
            </Grid>
            <Grid container xs={12} item justifyContent="center">
-           <div data-aos="fade-up" style={{width:"300px",height:"6px",backgroundColor:`${theme.colors.primary}` ,zIndex:"1000",borderRadius:"20px" }}></div>
+           <div data-aos="fade-up" style={{width:"200px",height:"4px",backgroundColor:`${theme.colors.primary}` ,zIndex:"1000",borderRadius:"20px" }}></div>
            </Grid>
            </Grid>
             <Grid container sx={{marginTop:"25px"}} >

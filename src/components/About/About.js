@@ -2,15 +2,12 @@ import { Box, Grid,Typography,styled } from '@mui/material'
 import React from 'react'
 import { useEffect } from 'react'
 import theme from '../theme'
-import { Divider2 } from '../common/common'
 import Image from '../../images/About.jpg'
 import IconsWeb from './IconsWeb'
 import WebIcon from '@mui/icons-material/Web';
 import LaptopIcon from '@mui/icons-material/Laptop';
 import PhoneAndroidIcon from '@mui/icons-material/PhoneAndroid';
 import Aos from "aos"
-import Typical from "react-typical"
-import Typed from 'react-typed'
 import "aos/dist/aos.css"
 
 
@@ -39,7 +36,7 @@ export default function About() {
   
   return (
     <>
-    <Box id="about" sx={{width:"100%" ,wordWrap: "break-word" ,backgroundColor: `${theme.colors.base1}`,pt:"100px" ,paddingLeft:"5%px"}}>
+    <Box id="about" sx={{width:"100%" ,wordWrap: "break-word" ,backgroundColor: `${theme.colors.base1}`,pt:"100px" ,paddingLeft:"5%px",paddingBottom:"8%"}}>
    <Grid  data-aos="fade-right" container spacing={2} style={{width:"90%", backgroundColor: `${theme.colors.base1}`,marginLeft:"5%"}}> 
     <Grid item xs={0} sx={{display:{xs:"none",sm:"block"}}} sm={5} md={4} >
     <Box><img src={Image} style={{height:"500px"}}></img></Box>
@@ -49,11 +46,11 @@ export default function About() {
     <Decorator>
           <Typography variant="h3" color="#fff" component="h4" sx={{fontSize:{xs:"1rem",sm:"1.3rem"},lineHeight:"40px",position:"absolute",left:"20px"}}>About us</Typography>
      </Decorator>
-        <Typography variant="h3" component="h4">
+        <Typography variant="h3" component="h4" sx={{fontSize:{xs:"2rem",sm:"3rem"}}}>
             Hello, I'm Hammad
         </Typography>
         <div data-aos="fade-up" style={{width:"80px",height:"6px",backgroundColor:`${theme.colors.primary}` ,zIndex:"1000",borderRadius:"20px" }}></div>
-        <Typography variant="h5" component="h6">
+        <Typography variant="h5" component="h6"sx={{fontSize:{xs:"1.3rem",sm:"2rem"}}}>
             jusadhsanjdsadnjksdnfkjsnfkjsanfkjnsdkjfnskfnkjsfkj
             dsfsdfdsfsdf
         </Typography>
