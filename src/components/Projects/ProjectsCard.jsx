@@ -16,7 +16,7 @@ const CardBox=styled(Box)(({ theme })=>({
 
 }))
 
-const ProjectsCard = () => {
+const ProjectsCard = (props) => {
   return (
     <>
       <Card sx={{ minWidth: 300,maxWidth:"400px" }}>
@@ -29,11 +29,14 @@ const ProjectsCard = () => {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="div">
-            Lizard
+            {props.heading}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Lizards are a widespread group of squamate reptiles, with over 6,000
-            species, ranging across all continents except Antarctica
+          {props.desc}
+          </Typography>
+          <br />
+          <Typography variant="body2" color="text.secondary">
+           Tools used:{props.tools}
           </Typography>
         </CardContent>
       </CardActionArea>

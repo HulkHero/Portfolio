@@ -49,12 +49,12 @@ const Projects = () => {
            <Grid container  direction="row"
             justifyContent="center"
             alignItems="center" alightContent="center" spacing={2}  sx={{width:{xs:"95%",sm:"100%"}, padding:{xs:"0",sm:"5%"},paddingBottom:"5%",margin:"0"}} >
-           <Grid item xs={12} sm={6} md={4} sx={{paddingBottom:"5%"}}  ><ProjectsCard></ProjectsCard></Grid> 
-           <Grid item xs={12} sm={6} md={4} sx={{paddingBottom:"5%"}} ><ProjectsCard></ProjectsCard></Grid> 
-           <Grid item xs={12} sm={6} md={4} sx={{paddingBottom:"5%"}} ><ProjectsCard></ProjectsCard></Grid> 
-           <Grid item xs={12} sm={6} md={4} sx={{paddingBottom:"5%"}} ><ProjectsCard></ProjectsCard></Grid> 
-           <Grid item xs={12} sm={6} md={4} sx={{paddingBottom:"5%"}} ><ProjectsCard></ProjectsCard></Grid> 
-           <Grid item xs={12} sm={6} md={4} sx={{paddingBottom:"5%"}} ><ProjectsCard></ProjectsCard></Grid> 
+           <Grid item xs={12} sm={6} md={4} sx={{paddingBottom:"5%"}} ><ProjectsCard heading={"Mern App"} desc={"Mern app with database and authentication.Only shows data when you log in."} tools={"Mern Stack, Material UI"} ></ProjectsCard></Grid> 
+           <Grid item xs={12} sm={6} md={4} sx={{paddingBottom:"5%"}} ><ProjectsCard heading={"Desktop App"} desc={"Desktop application which stores the customers data and generates Pdf reports.Stores data like debit,credit,balance individually of each customer."} tools={"C sharp, XML, itextSharp"} ></ProjectsCard></Grid> 
+           <Grid item xs={12} sm={6} md={4} sx={{paddingBottom:"5%"}} ><ProjectsCard heading={"Intelligent Riding System"} desc={"Measures the speed,temperature and pressure.Turns the lights on in dark automatically.Beeps  when the distance is too short with other object"} tools={"Stm32f407, ultrasonic sensor, bmp 180, LDR, Hall effect Sensor"}></ProjectsCard></Grid> 
+           <Grid item xs={12} sm={6} md={4} sx={{paddingBottom:"5%"}} ><ProjectsCard heading={" "} desc={" "} ></ProjectsCard></Grid> 
+           <Grid item xs={12} sm={6} md={4} sx={{paddingBottom:"5%"}} ><ProjectsCard heading={" "} desc={" "} ></ProjectsCard></Grid> 
+           <Grid item xs={12} sm={6} md={4} sx={{paddingBottom:"5%"}} ><ProjectsCard heading={" "} desc={" "} ></ProjectsCard></Grid> 
            </Grid>
         </Box>
         </div>

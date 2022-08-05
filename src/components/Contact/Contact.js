@@ -46,7 +46,7 @@ const Contact = () => {
         <div data-aos="fade-up" style={{width:"100px",height:"4px",backgroundColor:`${theme.colors.primary}` ,zIndex:"1000",borderRadius:"20px" }}></div>
         </Grid>
         </Grid>
-        <Grid container justifyContent="center"  sx={{marginTop:"25px"}} >
+        <Grid container justifyContent="center" spacing={2} sx={{marginTop:"25px"}} >
         <Grid item justifyContent="center" xs={0}  sx={{width:"50%", display:{xs:"none",sm:"block"}}} sm={5} md={4} >
             <Box  sx={{marginLeft:"40px"}}  ><img src={Image} style={{height:"500px"}}></img></Box>
             </Grid>
