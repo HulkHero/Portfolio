@@ -32,9 +32,9 @@ const ContactForm = () => {
    
      <form ref={form} onSubmit={sendEmail}>
       <Grid container justifyContent="center"  sx={{width:"90%"}} flexDirection={"column"} >
-    <TextField type="name" value={user.name} name="name" id="outlined-basic"  onChange={handleChange} sx={{alignSelf:"center",maxWidth:"600px",mb:'10px',input :{color:`${theme.colors.base2}`,borderColor:`${theme.colors.base2}`},bgcolor:`${theme.colors.base1}`}} label="Name" variant="outlined" />     
-    <TextField type="email" value={user.email} name="email" id="outlined-basic" onChange={handleChange} sx={{alignSelf:"center",maxWidth:"600px",mb:'10px',input :{color:`${theme.colors.base2}`,borderColor:`${theme.colors.base2}`}}}  label="Email" variant="outlined" />
-    <TextField type="messege" value={user.messege} name="messege" id="outlined-basic" onChange={handleChange} multiline={true} sx={{alignSelf:"center",maxWidth:"600px",mb:'10px',minHeight:"100px",input :{color:`${theme.colors.base2}`,borderColor:`${theme.colors.base2}`}}} label="Message" variant="outlined" />
+    <TextField type="name" value={user.name} name="name" id="outlined-basic"  onChange={handleChange} sx={{alignSelf:"center",maxWidth:"600px",mb:'10px',input :{color:`${theme.colors.base2}`,borderColor:`${theme.colors.base2}`},bgcolor:`${theme.colors.base1}`,}} label="Name" variant="outlined" />     
+    <TextField type="email" value={user.email} name="email" id="outlined-basic" onChange={handleChange} sx={{alignSelf:"center",maxWidth:"600px",mb:'10px',input :{color:`${theme.colors.base2}`,borderColor:`${theme.colors.base2}`,}}}  label="Email" variant="outlined" />
+    <TextField type="messege" value={user.messege} label="Message" name="messege" id="outlined-basic" onChange={handleChange} multiline={true} sx={{alignSelf:"center",maxWidth:"600px",mb:'10px',minHeight:"100px",input :{color:`${theme.colors.base2}`,borderColor:`${theme.colors.base2}`},bgcolor:`${theme.colors.base1}`,}}  variant="outlined" />
     <Button type="submit"  value="Send" sx={{alignSelf:"center",width:"50px"}}>Submit</Button>
     </Grid>
     </form>

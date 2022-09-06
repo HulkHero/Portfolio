@@ -1,7 +1,12 @@
 import {createTheme} from "@mui/material"
 const theme=createTheme({
     palette:{
-      
+      primary:{
+        main:'#0097a7'
+      },
+      action:{
+        hover:"#0097a7"
+      }
 
     },
     colors: {

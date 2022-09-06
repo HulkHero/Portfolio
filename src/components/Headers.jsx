@@ -74,7 +74,7 @@ const Header=()=>{
                     'Programmer',
                     'Web Developer',
                     'C++ Expert',
-                     "Desktop Application",
+                     "Desktop App Dev",
                       ]}
                     typeSpeed={40}
                     backSpeed={50}
