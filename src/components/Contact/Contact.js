@@ -4,6 +4,7 @@ import { Box, Typography,Grid,styled} from '@mui/material'
 import theme from '../theme'
 import Image from '../../images/contactus.jpg'
 import ContactForm from './ContactForm'
+import "./about.css"
 const Decorator=styled(Box)(({ theme })=>({
     display: "flex",
     fontWeight: "bolder",
@@ -20,8 +21,13 @@ const Decorator=styled(Box)(({ theme })=>({
   ))
 const Contact = () => {
   return (
-    <div id="contact" style={{ width:"100%",bgcolor:`${theme.colors.base1}`,marginTop:"0"}}>
-    <Box sx={{ width:"100%",bgcolor:`${theme.colors.base1}`,paddingTop:"60px"}}>
+    <div  style={{ width:"100%",backgroundColor:`${theme.colors.base1}`,marginTop:"0"}}>
+       <div class="wave">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>
+    <Box id="contact" sx={{ width:"100%",bgcolor:`${theme.colors.base1}`,paddingTop:"60px"}}>
       
    <Grid
        container
@@ -53,8 +59,8 @@ const Contact = () => {
             <Grid item xs ={12} sm={7} md={8} sx={{width:"50%"}} ><ContactForm></ContactForm></Grid>
            
            </Grid>
-
         </Box>
+           
         </div>
   )
 }

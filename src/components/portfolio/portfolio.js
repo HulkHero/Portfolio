@@ -6,6 +6,7 @@ import Icons from './icons'
 import Image from '../../images/About.jpg'
 import Aos from 'aos'
 import "aos/dist/aos.css"
+import "./portfolio.css"
 
 
 const Decorator=styled(Box)(({ theme })=>({
@@ -35,8 +36,14 @@ export const Portfolio = () => {
     
   }, [])
   return (
-    <div id="portfolio"  style={{ width:"100%" , backgroundColor:`${theme.colors.primary1}`,marginTop:"0px",pt:"20px",pb:"20px"}}>
-       <Box sx={{width:{xs:"100%",sm:"90%"}, bgcolor:`${theme.colors.primary1}`,paddingTop:"60px"}}>
+    <div id="portfolio"  style={{ width:"100%" , backgroundColor:`${theme.colors.primary1}`,marginTop:"0px",pt:"0px",pb:"20px"}}>
+             <div class="custom-shape-divider-top-1665227565">
+    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+        <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+    </svg>
+</div>
+      
+       <Box sx={{width:{xs:"100%",sm:"90%"}, bgcolor:`${theme.colors.primary1}`,paddingTop:"10px"}}>
          
       <Grid
           container
@@ -68,6 +75,7 @@ export const Portfolio = () => {
             </Grid>
            </Grid>
         </Box>
+       
         </div>
   )
 }
