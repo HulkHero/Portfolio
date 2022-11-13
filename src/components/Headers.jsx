@@ -42,6 +42,12 @@ const Arrow=styled(Typography)(({ theme })=>({
  position: "absolute",
  color:theme.colors.base2,
  left:"105px",
+ [theme.breakpoints.down("sm")]:
+ {
+  left:`5.2rem`,
+
+ },
+ 
  lineHeight: "50px",
  animationName: "arrow",
  animationDuration:"0.7s",
@@ -68,7 +74,8 @@ const Header=()=>{
         <HeaderWrapper>
         <NavAppBar/>
         <HeaderContainer>
-          <Typography variant="h3" color="#fff" component="h4" sx={{maxHeight:"200px" ,fontSize:{xs:"2rem",sm:"3rem"},}}>I am a {" "} 
+          <Typography variant="h3" color="#fff" component="h4" sx={{maxHeight:"200px" ,fontSize:{xs:"2rem",sm:"3rem"},}}>I am a {" "}
+           <br></br>
           <Typed
                 strings={[
                     'Programmer',
